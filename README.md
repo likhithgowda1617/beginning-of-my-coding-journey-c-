@@ -1,4 +1,4 @@
 # beginning-of-my-coding-journey 
 this is my first git repositry
 <br>
-Author = Likhith Gowda 16
+Author = Likhith Gowda 
