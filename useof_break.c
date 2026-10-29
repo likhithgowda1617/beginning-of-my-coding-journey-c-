@@ -3,18 +3,25 @@
 
 #include <stdio.h>
 int main(void){
-    int n,i;
-    for(i=0;i<n;i++){
+    //int n,i;
+    //for(i=0;i<n;i++){
+>>    //    printf("enter a number:");
+>>    //    scanf("%d",&n);
+>>    //    if(n%2!=0){
+>>    //        printf("don't enter odd number");
+>>    //        break;
+>>    //    }
+>> 
+>>   //}       
+    int n;
+    while(1){
         printf("enter a number:");
         scanf("%d",&n);
         if(n%2!=0){
-            printf("don't enter odd number");
+            printf("thank you");
             break;
         }
-
-        printf("%d\n",n);
-
     }
 
 }
-//break also comes out from all nested loops though if it is in nested loop
+//break also comes out from all nested loops and main loop if it is in nested loop
