@@ -3,16 +3,7 @@
 
 #include <stdio.h>
 int main(void){
-    //int n,i;
-    //for(i=0;i<n;i++){
->>    //    printf("enter a number:");
->>    //    scanf("%d",&n);
->>    //    if(n%2!=0){
->>    //        printf("don't enter odd number");
->>    //        break;
->>    //    }
->> 
->>   //}       
+    
     int n;
     while(1){
         printf("enter a number:");
@@ -24,4 +15,4 @@ int main(void){
     }
 
 }
-//break also comes out from all nested loops and main loop if it is in nested loop
+//break exits only the innermost loop it is in, not the outer loops
