@@ -5,16 +5,19 @@ void printnamaste();
 void printbonjour();
 
 
-int main(){
+int main(void){
     int opt;
     printf("opt 1.if you're Indian\nor\nopt 2.if you're french :");
-    scanf ("%d",&opt);
-
-    if (opt==1){
-        printnamaste();
+    if(scanf("%d",&opt)!=1){
+        printf("invalid input\n");
     }
-    else if (opt==2){
-        printbonjour();
+    else{
+        if (opt==1){
+            printnamaste();
+        }
+        else if (opt==2){
+            printbonjour();
+        }
     }
     return 0;
 }

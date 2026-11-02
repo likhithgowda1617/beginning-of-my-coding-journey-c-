@@ -1,21 +1,26 @@
 #include <stdio.h>
 
 
-void main(){
+int main(void){
     int year,period,principal;
     float amt,value,inrate;
     
     printf("enter principal amount and period of years: ");
-    scanf("%d %d", &principal, &period);
+    if(scanf("%d %d", &principal, &period)!=2){
+        printf("invalid input\n");
+        return 1;
+    }
     
-    amt=principal;
-    inrate=0.11;
-    year=0;
+    else{
+        amt=principal;
+        inrate=0.11;
+        year=0;
 
-    while(year<=period){
-        printf("%d %8.2f\n",year,amt);
-        value=amt+inrate*amt;
-        year=year+1;
-        amt=value;
+        while(year<=period){
+            printf("%d %8.2f\n",year,amt);
+            value=amt+inrate*amt;
+            year=year+1;
+            amt=value;
+        }
     }
 }

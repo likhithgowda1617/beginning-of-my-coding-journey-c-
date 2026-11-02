@@ -1,17 +1,20 @@
 #include <stdio.h>
-void main(){
+int main(void){
     int a,b,c,min;
     printf("enter three numbers:\n");
-    scanf("%d%d%d",&a,&b,&c);
-    min=a;
-    if(b<min){
-        min=b;
-        
+    if(scanf("%d%d%d",&a,&b,&c)!=3){
+        printf("invalid input\n");
+        return 1;
     }
-    if(c<min){
-        min=c;
+    else{
+        min=a;
+        if(b<min){
+            min=b;
+        }
+        if(c<min){
+            min=c;
+        }
+        printf("%d is the smallest number",min);
     }
-    
-    printf("%d is the smallest number",min);
-
+    return 0;
 }

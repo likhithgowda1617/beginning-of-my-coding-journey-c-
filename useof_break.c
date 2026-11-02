@@ -7,10 +7,15 @@ int main(void){
     int n;
     while(1){
         printf("enter a number:");
-        scanf("%d",&n);
-        if(n%2!=0){
-            printf("thank you");
-            break;
+        if(scanf("%d",&n)!=1){
+            printf("invalid input\n");
+            return 1;
+        }
+        else{
+            if(n%2!=0){
+                printf("thank you");
+                break;
+            }
         }
     }
 
